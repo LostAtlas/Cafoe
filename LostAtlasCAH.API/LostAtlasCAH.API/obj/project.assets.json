@@ -5663,7 +5663,7 @@
       ]
     },
     "Microsoft.CSharp/4.5.0": {
-      "sha512": "kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
+      "sha512": "EGoBmf3Na2ppbhPePDE9PlX81r1HuOZH5twBrq7couJZiPTjUnD3648balerQJO6EJ8Sj+43+XuRwQ7r+3tE3w==",
       "type": "package",
       "path": "microsoft.csharp/4.5.0",
       "files": [
@@ -7071,7 +7071,7 @@
       ]
     },
     "Newtonsoft.Json/11.0.2": {
-      "sha512": "IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
+      "sha512": "znZGbws7E4BA9jxNZ7FuiIRI3C9hrgatVQSTKhIYZYNOud4M5VfGlTYi6RdYO5sQrebFuF/g9UEV3hOxDMXF6Q==",
       "type": "package",
       "path": "newtonsoft.json/11.0.2",
       "files": [
@@ -9045,7 +9045,7 @@
       ]
     },
     "System.Net.Http/4.3.0": {
-      "sha512": "sYg+FtILtRQuYWSIAuNOELwVuVsxVyJGWQyOnlAzhV4xvhyFnON1bAzYYC+jjRW8JREM45R0R5Dgi8MTC5sEwA==",
+      "sha512": "Z1UfSF6dlpCdZdxh6LeoGlYH+q6ptG/iiIWgUUeKhE3DbQACmZkU7Sz2nOX0qdHjz72MOdYRbkSJ5Qwl6sZgvg==",
       "type": "package",
       "path": "system.net.http/4.3.0",
       "files": [
@@ -9224,7 +9224,7 @@
       ]
     },
     "System.Numerics.Vectors/4.5.0": {
-      "sha512": "QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
+      "sha512": "MNcaYxUJvUcoXOa+jgKl/GDw/Mh+wMrxDjW4dre7qrp35LUGTjUBNtZsNjxsWX592ocdyqt1X5hMJB+5OStoYw==",
       "type": "package",
       "path": "system.numerics.vectors/4.5.0",
       "files": [
@@ -11832,23 +11832,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Bri\\.nuget\\packages\\": {},
+    "C:\\Users\\deand\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\VS_Source\\repos\\Cafoe\\LostAtlasCAH.API\\LostAtlasCAH.API\\LostAtlasCAH.API.csproj",
+      "projectUniqueName": "c:\\Users\\deand\\Documents\\ProgramProjects\\Repro\\Cafoe\\LostAtlasCAH.API\\LostAtlasCAH.API\\LostAtlasCAH.API.csproj",
       "projectName": "LostAtlasCAH.API",
-      "projectPath": "E:\\VS_Source\\repos\\Cafoe\\LostAtlasCAH.API\\LostAtlasCAH.API\\LostAtlasCAH.API.csproj",
-      "packagesPath": "C:\\Users\\Bri\\.nuget\\packages\\",
-      "outputPath": "E:\\VS_Source\\repos\\Cafoe\\LostAtlasCAH.API\\LostAtlasCAH.API\\obj\\",
+      "projectPath": "c:\\Users\\deand\\Documents\\ProgramProjects\\Repro\\Cafoe\\LostAtlasCAH.API\\LostAtlasCAH.API\\LostAtlasCAH.API.csproj",
+      "packagesPath": "C:\\Users\\deand\\.nuget\\packages\\",
+      "outputPath": "c:\\Users\\deand\\Documents\\ProgramProjects\\Repro\\Cafoe\\LostAtlasCAH.API\\LostAtlasCAH.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Bri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\deand\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11884,6 +11884,7 @@
             "version": "[2.1.2, )"
           },
           "Microsoft.NETCore.App": {
+            "suppressParent": "All",
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true

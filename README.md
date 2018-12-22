@@ -4,18 +4,7 @@
 
 
 
-## API Project - Visual Studio Instructions
-1. Clone the Project > Open in Visual Studio.
-
-![Visual Studio](https://i.imgur.com/7qRyWlm.png)
-
-**2. Your Visual Studio Solution will look the 1st image.**
-
-- To Open API Project: Click the arrow beside LostAtlasCAH.API and double click the **LostAtlasCAH.API.sln**. Build and done!  
-- To go back to back projects (REACT + API) Click the Solutions & Folders icon I've circled. For now I'm 
-
-![Solution Explorer](https://i.imgur.com/7FJv3go.png)![API Project](https://i.imgur.com/aKmS9tl.png)
-
+## [Visual Studio Setup Instructions](https://github.com/LostAtlas/Cafoe/wiki/Visual-Studio-Setup)
 
 
 ## Visual Studio Code Instructions

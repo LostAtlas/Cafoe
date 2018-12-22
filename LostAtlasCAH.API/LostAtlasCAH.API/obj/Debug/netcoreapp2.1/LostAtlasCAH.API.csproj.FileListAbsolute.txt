@@ -1,0 +1,14 @@
+E:\VS_Source\repos\Cafoe\LostAtlasCAH.API\LostAtlasCAH.API\bin\Debug\netcoreapp2.1\LostAtlasCAH.API.deps.json
+E:\VS_Source\repos\Cafoe\LostAtlasCAH.API\LostAtlasCAH.API\bin\Debug\netcoreapp2.1\LostAtlasCAH.API.runtimeconfig.json
+E:\VS_Source\repos\Cafoe\LostAtlasCAH.API\LostAtlasCAH.API\bin\Debug\netcoreapp2.1\LostAtlasCAH.API.runtimeconfig.dev.json
+E:\VS_Source\repos\Cafoe\LostAtlasCAH.API\LostAtlasCAH.API\bin\Debug\netcoreapp2.1\LostAtlasCAH.API.dll
+E:\VS_Source\repos\Cafoe\LostAtlasCAH.API\LostAtlasCAH.API\bin\Debug\netcoreapp2.1\LostAtlasCAH.API.pdb
+E:\VS_Source\repos\Cafoe\LostAtlasCAH.API\LostAtlasCAH.API\obj\Debug\netcoreapp2.1\LostAtlasCAH.API.csprojAssemblyReference.cache
+E:\VS_Source\repos\Cafoe\LostAtlasCAH.API\LostAtlasCAH.API\obj\Debug\netcoreapp2.1\LostAtlasCAH.API.csproj.CoreCompileInputs.cache
+E:\VS_Source\repos\Cafoe\LostAtlasCAH.API\LostAtlasCAH.API\obj\Debug\netcoreapp2.1\LostAtlasCAH.API.RazorAssemblyInfo.cache
+E:\VS_Source\repos\Cafoe\LostAtlasCAH.API\LostAtlasCAH.API\obj\Debug\netcoreapp2.1\LostAtlasCAH.API.RazorAssemblyInfo.cs
+E:\VS_Source\repos\Cafoe\LostAtlasCAH.API\LostAtlasCAH.API\obj\Debug\netcoreapp2.1\LostAtlasCAH.API.AssemblyInfoInputs.cache
+E:\VS_Source\repos\Cafoe\LostAtlasCAH.API\LostAtlasCAH.API\obj\Debug\netcoreapp2.1\LostAtlasCAH.API.AssemblyInfo.cs
+E:\VS_Source\repos\Cafoe\LostAtlasCAH.API\LostAtlasCAH.API\obj\Debug\netcoreapp2.1\LostAtlasCAH.API.RazorTargetAssemblyInfo.cache
+E:\VS_Source\repos\Cafoe\LostAtlasCAH.API\LostAtlasCAH.API\obj\Debug\netcoreapp2.1\LostAtlasCAH.API.dll
+E:\VS_Source\repos\Cafoe\LostAtlasCAH.API\LostAtlasCAH.API\obj\Debug\netcoreapp2.1\LostAtlasCAH.API.pdb

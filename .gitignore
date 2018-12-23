@@ -3,3 +3,8 @@
 ################################################################################
 
 /LostAtlasCAH.API/.vs/LostAtlasCAH.API/v15
+/.vs
+/LostAtlasCAH.React/node_modules
+/LostAtlasCAH.API/.vs/config
+/LostAtlasCAH.API/LostAtlasCAH.API/obj
+/LostAtlasCAH.API/LostAtlasCAH.API/bin

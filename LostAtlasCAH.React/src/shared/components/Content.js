@@ -10,12 +10,12 @@ import Contact from './pages/Contact';
 class Content extends Component {
   render() {
     return (
-        <div>
+        <div id="content">
           <Switch>
               <Route path="/" component={Home} exact />
-              <Route path="/about" component={About} />
-              <Route path="/profile" component={Profile} />
-              <Route path="/contact" component={Contact} />
+              <Route path="/game" component={About} />
+              <Route path="/search" component={Profile} />
+              <Route path="/logout" component={Contact} />
           </Switch>
         </div>
     );

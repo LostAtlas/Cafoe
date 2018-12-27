@@ -23,6 +23,10 @@ const browserConfig = {
             {
                 test: /\.css$/,
                 loaders: 'style-loader!css-loader'
+            },
+            {
+                test: /\.(gif|svg|jpg|png)$/,
+                loader: "url-loader"
             }
         ]
     },
@@ -31,7 +35,12 @@ const browserConfig = {
         minimizer: [new UglifyJsPlugin({
           include: /\.min\.js$/
         })]
-    }
+    },
+    plugins: [
+        new webpack.DefinePlugin({
+          __isBrowser__: "true"
+        })
+    ]
 };
 
 const serverConfig = {
@@ -53,6 +62,10 @@ const serverConfig = {
             {
                 test: /css$/,
                 use: 'css-loader'
+            },
+            {
+                test: /\.(gif|svg|jpg|png)$/,
+                loader: "url-loader",
             }
         ]
     } ,
@@ -61,7 +74,12 @@ const serverConfig = {
         minimizer: [new UglifyJsPlugin({
           include: /\.min\.js$/
         })]
-    }
+    },
+    plugins: [
+        new webpack.DefinePlugin({
+          __isBrowser__: "false"
+        })
+    ]
 };
 
 

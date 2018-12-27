@@ -3,7 +3,6 @@ const css = require('../css/style.css');
 
 import Navigation from './Navigation';
 import Content from './Content';
-import Footer from './Footer';
 
 class App extends Component {
   render() {
@@ -11,7 +10,6 @@ class App extends Component {
       <div>
         <Navigation />
         <Content />
-        <Footer />
       </div>
     );
   }

@@ -5,14 +5,27 @@ class Navigation extends Component {
   render() {
     return (
       <div id="nav">
-        <h1>LostAtlas React App</h1>
-        <div id="menu">
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="/about">About</NavLink>
-          <NavLink to="/profile">Profile</NavLink>
-          <NavLink to="/contact">Contact</NavLink>
+
+        <div id="logo">
+         <img src={require("../images/smallLogo.png")} alt="CAHO"/>
         </div>
-        
+        <div id="menu">
+          <NavLink exact to="/">
+            <img src={require("../images/homeIcon.png")} alt="Home"/>
+          </NavLink>
+          <NavLink to="/game">
+            <img src={require("../images/cardsIcon2.png")} alt="Play"/>
+          </NavLink>
+          <NavLink to="/search">
+            <img src={require("../images/searchIcon.png")} alt="Search"/>
+          </NavLink>
+        </div>
+        <div id="log">
+          <NavLink to="/logout">
+          <img src={require("../images/logoutIcon.png")} alt="Logout"/>
+          </NavLink>
+        </div>
+
       </div>
     );
   }

@@ -10,7 +10,7 @@ class Navigation extends Component {
          <img src={require("../images/smallLogo.png")} alt="CAHO"/>
         </div>
         <div id="menu">
-          <NavLink exact to="/">
+          <NavLink to="/dashboard">
             <img src={require("../images/homeIcon.png")} alt="Home"/>
           </NavLink>
           <NavLink to="/game">

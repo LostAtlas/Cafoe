@@ -6,7 +6,7 @@ class UserLogin extends Component {
   render() {
     return (
       <div id="enterPage">
-        <div id="centerBox">
+        <div className="CenterBox">
                    <img src={require("../../images/logo1.png")} alt="Logo" />
                    <h3>CARDS AGAINST HUMANITY ONLINE</h3>
                    

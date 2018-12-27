@@ -35,7 +35,12 @@ const browserConfig = {
         minimizer: [new UglifyJsPlugin({
           include: /\.min\.js$/
         })]
-    }
+    },
+    plugins: [
+        new webpack.DefinePlugin({
+          __isBrowser__: "true"
+        })
+    ]
 };
 
 const serverConfig = {
@@ -69,7 +74,12 @@ const serverConfig = {
         minimizer: [new UglifyJsPlugin({
           include: /\.min\.js$/
         })]
-    }
+    },
+    plugins: [
+        new webpack.DefinePlugin({
+          __isBrowser__: "false"
+        })
+    ]
 };
 
 

@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const path = require('path');
+var nodeExternals = require('webpack-node-externals');
 
 const BROWSER_DIR = path.resolve(__dirname, './src/browser');
 const SERVER_DIR = path.resolve(__dirname, './src/server');
@@ -69,6 +70,7 @@ const serverConfig = {
             }
         ]
     } ,
+    externals: [nodeExternals()],
     optimization: {
         minimize: true,
         minimizer: [new UglifyJsPlugin({
@@ -81,6 +83,5 @@ const serverConfig = {
         })
     ]
 };
-
 
 module.exports = [browserConfig, serverConfig];

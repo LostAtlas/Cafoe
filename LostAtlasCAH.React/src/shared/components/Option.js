@@ -19,7 +19,7 @@ class Option extends Component {
 
     return (
       <div className="SettingOptions"> 
-        <h2>{this.props.data.title}</h2>
+        <h2>{this.props.data.title}:</h2>
         <div className="Container" dangerouslySetInnerHTML={{__html: 
         selection}}></div>
  

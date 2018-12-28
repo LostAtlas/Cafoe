@@ -21,7 +21,7 @@ class Navigation extends Component {
           </NavLink>
         </div>
         <div id="log">
-          <NavLink to="/logout">
+          <NavLink to="/">
           <img src={require("../images/logoutIcon.png")} alt="Logout"/>
           </NavLink>
         </div>

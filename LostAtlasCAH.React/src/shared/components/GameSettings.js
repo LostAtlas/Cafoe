@@ -65,6 +65,7 @@ class GameSettings extends Component {
             {optionsList}
         </div>
         <div id="set2">
+          <h2>Card Sets</h2>
           <div className="Container" dangerouslySetInnerHTML={{__html: 
           cardPackString}}></div>
         </div>

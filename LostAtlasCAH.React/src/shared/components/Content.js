@@ -14,10 +14,10 @@ class Content extends Component {
           <Switch>
               <Route path="/" component={UserLogin} exact />
               <Route path="/Dashboard" component={About} />
-              <Route path="/Game" component={About} />
+              <Route path="/Game" component={Contact} />
               <Route path="/NewGame" component={GameCreation} />
               <Route path="/Search" component={Profile} />
-              <Route path="/Logout" component={Contact} />
+              <Route path="/Logout" component={UserLogin} />
           </Switch>
         </div>
     );

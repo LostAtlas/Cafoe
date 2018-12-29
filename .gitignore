@@ -7,6 +7,10 @@
 */node_modules/
 
 .vscode/
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3320304b8e510eaaa38e2983785bd436419c99b5
 /.vs
 /LostAtlasCAH.React/node_modules
 /LostAtlasCAH.API/.vs/config

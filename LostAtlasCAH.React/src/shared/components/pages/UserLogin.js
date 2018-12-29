@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 
-//const signalR = require("@aspnet/signalr");
+const signalR = require("@aspnet/signalr");
 
 class UserLogin extends Component {
 
   render() {
-    /*
+
     let connection = new signalR.HubConnectionBuilder()
         .withUrl("http://localhost:5000/chatHub")
         .build();
@@ -17,7 +17,7 @@ class UserLogin extends Component {
     
     connection.start()
         .then(() => connection.invoke("sendMessage", "Hello"));
-   */
+
     return (
       <div id="enterPage">
         <div className="CenterBox">

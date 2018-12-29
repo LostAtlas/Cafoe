@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import Option from "./Option";
-import { NavLink } from "react-router-dom";
-import $ from "jquery";
 
 var settingOptionsArray = [{ title: "Score limit",
                                   selectId: "scoreLimit",

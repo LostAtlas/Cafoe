@@ -3,17 +3,18 @@ import React, { Component } from "react";
 class Option extends Component {
 
   render() {
+
     var selection = "";
     if(this.props.data.selectType == "num"){
-        selection +=  "<select>"
+        selection +=  "<select id=\"" + this.props.data.selectId + "\" >"
         for(var x = 1; x <= this.props.data.selectSize;x++){
             selection += "<option value=" + x + ">" + x + "</option>";
         }
         selection +=  "</select>"
     }else if(this.props.data.selectType == "privacy"){
-        selection = "<select><option value=\"public\">Public</option><option value=\"private\">Private</option></select>"
+        selection = "<select id=\"" + this.props.data.selectId + "\"><option value=\"public\">Public</option><option value=\"private\">Private</option></select>"
     }else if(this.props.data.selectType == "password"){
-        selection = "<input type=\"password\" name=\"gamePassword\"  />"
+        selection = "<input type=\"password\" name=\"gamePassword\" id=\"" + this.props.data.selectId + "\" />"
     }
     
 
@@ -22,7 +23,6 @@ class Option extends Component {
         <h2>{this.props.data.title}:</h2>
         <div className="Container" dangerouslySetInnerHTML={{__html: 
         selection}}></div>
- 
       </div>
     );
   }

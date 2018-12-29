@@ -3,7 +3,7 @@
 */
 
 body{
-    margin: 0;
+    margin: 0px;
     background-color: #151619;
     color: white;
     font-family: 'Oswald', sans-serif;
@@ -18,8 +18,8 @@ body{
 */
 #nav{
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 0px;
+    left: 0px;
     width: 85px;
     height: 100vh;
     background-color: #1b1d22;
@@ -55,8 +55,8 @@ a{
 
 #logo{
     position: absolute;
-    margin: 0;
-    top: 30;
+    margin: 0px;
+    top: 30px;
     width: 85px;
     text-align: center;
     font-size: 25px;
@@ -70,7 +70,7 @@ a{
 
 #log{
     position: absolute;
-    bottom: 30;
+    bottom: 30px;
 }
 
 #menu img, #log img{
@@ -88,8 +88,8 @@ a{
 
 .Content{
     position: fixed;
-    top:0;
-    left: 85;
+    top:0px;
+    left: 85px;
     width: calc(100vw - 85px);
     height: 100vh;
     overflow-y:scroll;
@@ -101,8 +101,8 @@ a{
 
 #enterPage{
     position: fixed;
-    top:0;
-    left: 0;
+    top:0px;
+    left: 0px;
     z-index: 5;
     width: 100vw;
     height: 100vh;
@@ -139,8 +139,8 @@ a{
     display: inline-block;
     background-color: #252932;
     height: 45px;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
     box-sizing: border-box;
     padding: 13px 15px;
     vertical-align:top;
@@ -175,7 +175,7 @@ a{
     box-sizing: border-box;
     padding-top: 10px;
     display: inline-block;
-    margin: 0;
+    margin: 0px;
     
 }
 
@@ -208,11 +208,11 @@ a{
 .SettingOptions {
     display: inline-block;
     min-width: 160px;
-    margin: 0;
+    margin: 0px;
 }
 .SettingOptions *{
     float: left;
-    margin: 0;
+    margin: 0px;
 }
 
 .SettingOptions h2, .SettingOptions select, .SettingOptions input{
@@ -243,7 +243,7 @@ a{
 
 #set1 h1{
     margin-bottom: 50px;
-    margin-left: -288;
+    margin-left: -288px;
 }
 
 .CardPack{
@@ -286,7 +286,7 @@ a{
 #contentNav a p{
     float: right;
     margin-right: 4%;
-    margin-top: 40;
+    margin-top: 40px;
 }
 
 /*

@@ -1,16 +1,30 @@
+/*
+* ========= GLOBAL STYLING SECTION ==============================
+*/
+
 body{
     margin: 0;
     background-color: #151619;
     color: white;
+    font-family: 'Oswald', sans-serif;
+    background-image: linear-gradient(45deg,rgba(27, 29, 34,1), rgba(255,0,0,0), rgba(27, 29, 34,1));
 }
 
+/*
+* ---------------------------------------------------------------
+*
+* ========= NAVIGATION BAR STYLING SECTION ==============================
+*
+*/
 #nav{
     position: fixed;
     top: 0;
     left: 0;
     width: 85px;
     height: 100vh;
-    box-sizing: border-box;
+    background-color: #1b1d22;
+    box-shadow: 15px 0px 20px rgba(19,21,25, .5);
+    
 }
 
 #nav a{
@@ -23,6 +37,11 @@ body{
     padding-top: 22px;
     text-align: center;
 
+}
+
+a{
+    color: white;
+    text-decoration: none;
 }
 
 #nav a:hover{
@@ -60,16 +79,37 @@ body{
     margin: -4px 0px;
 } 
 
+/*
+* ---------------------------------------------------------------
+*
+* ========= SITE ENTRANCE/USERNAME SELECTION PAGE STYLING SECTION ==============================
+*
+*/
 
-#content{
+.Content{
     position: fixed;
     top:0;
     left: 85;
     width: calc(100vw - 85px);
     height: 100vh;
+    overflow-y:scroll;
 }
 
-#centerBox{
+.Content h1{
+    text-align: center;
+}
+
+#enterPage{
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 5;
+    width: 100vw;
+    height: 100vh;
+    background-color: #151619;
+}
+
+.CenterBox{
     position: absolute;
     text-align: center;
     top: 50%;
@@ -78,16 +118,22 @@ body{
     
 }
 
-#centerBox h3{
-    margin-top: 20px;
-    margin-bottom: 50px;
+.CenterBox img{
+    width: 60vw;
+    max-width: 600px;
 }
 
-#centerBox div{
+.CenterBox h3{
+    margin-top: 35px;
+    font-size: 16px;
+    margin-bottom: 70px;
+}
+
+.CenterBox div{
     height: 49px;
 }
 
-#centerBox div *{
+.CenterBox div *{
     color:aliceblue;
     width: 275px;
     display: inline-block;
@@ -101,31 +147,151 @@ body{
     
 }
 
-#centerBox input{
+.CenterBox input{
     width: 200px;
     margin-right: 5px;
     border: none;
 }
 
-#centerBox input::placeholder{
+.CenterBox input::placeholder{
     color:aliceblue;
 }
 
-#centerBox div p{
+.CenterBox div p{
     width: 70px;
+    font-size: 14px;
+    padding: 11px 1px;
+}
+
+.CenterBox a{
+    margin: auto;
 }
 
 #submit{
     background-color: #014d8e;
     height: 40px;
     font-size: 14px;
-    margin: auto;
     width: 275px;
     box-sizing: border-box;
-    padding-top: 12px;
+    padding-top: 10px;
+    display: inline-block;
+    margin: 0;
     
 }
 
 #submit:hover{
     background-color: #1369b4;
 }
+
+/*
+* ---------------------------------------------------------------
+*
+* ========= NEW GAME PAGE STYLING SECTION ==============================
+*
+*/
+
+
+#settings{
+    margin: auto;
+    max-width:662px; 
+}
+
+#settings h1{
+    position: relative;
+    left: 50%;
+    width: 300px;
+    padding-bottom: 10px;
+    transform: translate(45%, 0%);
+    margin-top: 80px;
+}
+
+.SettingOptions {
+    display: inline-block;
+    min-width: 160px;
+    margin: 0;
+}
+.SettingOptions *{
+    float: left;
+    margin: 0;
+}
+
+.SettingOptions h2, .SettingOptions select, .SettingOptions input{
+    color:aliceblue;
+    margin-bottom: 25px;
+    height: 25px;
+    box-sizing: border-box;
+    padding: 0px 5px;
+    vertical-align:top;
+    
+}
+
+.SettingOptions h2 {
+    font-size: 15px;
+    font-weight: 100;
+    font-family: 'Oswald', sans-serif;
+    padding-top: 4px;
+    padding: 0px 15px;
+    margin-top: -1px;
+}
+
+.SettingOptions select, .SettingOptions input{
+    border: none;
+    background-color: #252932;
+    min-width: 50px;
+    height: 22px;
+}
+
+#set1 h1{
+    margin-bottom: 50px;
+    margin-left: -288;
+}
+
+.CardPack{
+    width: 70px;
+    height: 50px;
+    margin-right: 7px;
+    margin-bottom: 7px;
+    background-color: #2e2e32;
+    float: left;
+}
+
+#set2{
+   height: 550px;
+    position: relative;
+    left: 50%;
+    transform: translate(-40%, 0%);
+    
+}
+
+#set2 h2{
+    font-size: 15px;
+    font-weight: 100;
+    margin-left: -50px;
+    margin-bottom: 40px;
+    
+}
+
+#startNewGame{
+    background-color: #014d8e;
+    height: 40px;
+    font-size: 14px;
+    width: 200px;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    text-align: center;
+    float: right;
+    margin-right: -16px;
+}
+
+#contentNav a p{
+    float: right;
+    margin-right: 4%;
+    margin-top: 40;
+}
+
+/*
+* ---------------------------------------------------------------
+*
+* =========  ==============================
+*
+*/

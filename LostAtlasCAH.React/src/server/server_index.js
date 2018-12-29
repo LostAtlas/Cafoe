@@ -12,6 +12,7 @@ app.get('*', (req, res) => {
         <html>
             <head>
                 <title>LostAtlas React App</title>
+                <link href="https://fonts.googleapis.com/css?family=Lato|Oswald|Roboto+Condensed|Source+Sans+Pro|Ubuntu|Ubuntu+Condensed" rel="stylesheet">
                 <script src="/bundle.min.js"></script>
             </head>
             <body>

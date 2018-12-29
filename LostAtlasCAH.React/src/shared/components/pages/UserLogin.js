@@ -1,10 +1,12 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 
-class Home extends Component {
+class UserLogin extends Component {
+
   render() {
     return (
-      <div id="content">
-        <div id="centerBox">
+      <div id="enterPage">
+        <div className="CenterBox">
                    <img src={require("../../images/logo1.png")} alt="Logo" />
                    <h3>CARDS AGAINST HUMANITY ONLINE</h3>
                    
@@ -12,10 +14,13 @@ class Home extends Component {
                         <input type="text" name="username" placeholder="Username" />
                         <p>#0000</p>
                    </div>
-                   <p id="submit">PLAY</p>
+                   <NavLink exact to="/dashboard">
+                        <p id="submit">ENTER</p>
+                   </NavLink>
+                   
         </div>
       </div>
     );
   }
 }
-export default Home;
+export default UserLogin;

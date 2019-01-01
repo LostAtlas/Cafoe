@@ -36,7 +36,10 @@ class About extends Component {
 
         <NavLink exact to="/newgame">
                 <p>CREATE GAME</p>
-            </NavLink>
+        </NavLink>
+        <NavLink exact to="/gameroom">
+                <p>GAMEROOM</p>
+        </NavLink>
       </div>
     );
   }

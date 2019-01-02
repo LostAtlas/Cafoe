@@ -29,6 +29,11 @@ body{
   ::-webkit-scrollbar-thumb:hover {
     background: rgb(70, 69, 69); 
   }
+
+
+  .hideThunb::-webkit-scrollbar-thumb {
+    background: #18161b; 
+  }
 /*
 * ---------------------------------------------------------------
 *

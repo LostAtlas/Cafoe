@@ -61,5 +61,15 @@ namespace SignalRChat.Hubs
             await Clients.All.SendAsync("incomingMessage", message + " Bitch!!");
         }
         
+        public async Task Hello(string message)
+        {
+            string hold = message.TrimEnd('}');
+            hold = hold + ",\"connectionID\":\"" + Context.ConnectionId + "\"}";
+            Console.WriteLine( "\n\n\nData: "  + hold + "\n\n\n");
+            await Clients.All.SendAsync("receiveMessage", hold);
+            //Console.WriteLine( "\n\n\nData: "  + message + "\n\n\n");
+            //await Clients.All.SendAsync("receiveMessage", message);
+        }
     }
+    
 }

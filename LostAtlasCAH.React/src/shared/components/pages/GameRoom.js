@@ -3,12 +3,14 @@ import Chat from "../Chat";
 import GameView from "../GameView";
 const signalR = require("@aspnet/signalr");
 
+var isSignalrConnected = false;
+
 
 class GameRoom extends Component {
   constructor(props){
     super(props);
     this.state = {
-      signalrConnection: false,
+      isSignalrConnected: isSignalrConnected,
       connection: null
     }
   }
@@ -19,14 +21,13 @@ class GameRoom extends Component {
     var userId = "963";
     var SessionIds  = [gameId, userId];
 
-    let connection = new signalR.HubConnectionBuilder()
+        let connection = new signalR.HubConnectionBuilder()
         .withUrl("http://localhost:5000/chatHub")
         .build();
 
-    console.log(connection);
     this.setState({connection}, ()=>{
 
-      if(!this.state.signalrConnection){
+      if(!this.state.isSignalrConnected){
       
         this.state.connection.start()
         .then(() => connection.invoke("joinGameSession", SessionIds))
@@ -34,8 +35,9 @@ class GameRoom extends Component {
         .catch(err => console.log("Connection Failed..."));
         
         this.setState({
-          signalrConnection: true
+          isSignalrConnected: true
         })
+        isSignalrConnected = true;
       }
   
       this.state.connection.on("incomingMessage", data => {
@@ -50,10 +52,15 @@ class GameRoom extends Component {
 
   }
 
+  componentWillUnmount() {
+    isSignalrConnected = false;
+    this.state.connection.stop();
+  }
+
   render() {
     return (
       <div className="Content"> 
-        <Chat ref={(hold)=> {this.chat = hold}} isConnected={{bool: this.state.signalrConnection, connectionHub: this.state.connection}}/>
+        <Chat ref={(hold)=> {this.chat = hold}} isConnected={{bool: this.state.isSignalrConnected, connectionHub: this.state.connection}}/>
         <GameView />
       </div>
     );

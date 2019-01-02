@@ -82,9 +82,7 @@ class Chat extends Component {
             post: inputMsg
           };
 
-          console.log(msgHolder);
           var jsonMsg = JSON.stringify(msgHolder);
-          console.log(jsonMsg);
           this.props.isConnected.connectionHub.invoke("Hello", jsonMsg);
         
           this.post.value = ""; 
@@ -95,13 +93,10 @@ class Chat extends Component {
   
   
   receiveMessage(msg){
-    console.log("Child function success");
-    console.log(msg);
 
     var msgObj= {};
     try {
       var msgObj = JSON.parse(msg);
-      console.log(msgObj);
     } catch (ex) {
       console.error(ex);
     }

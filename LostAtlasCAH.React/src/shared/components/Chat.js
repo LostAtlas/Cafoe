@@ -50,7 +50,7 @@ class Chat extends Component {
   }
 
   componentWillUnmount() {
-    window.msgsContainer.removeEventListener('resize', this.getScrollTopMax);
+    window.removeEventListener('resize', this.getScrollTopMax);
     this.msgsContainer.removeEventListener('scroll', this.scrollCheck);
   }
 

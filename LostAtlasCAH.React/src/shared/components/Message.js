@@ -1,20 +1,25 @@
 import React, { Component } from "react";
 
 
-
 class Message extends Component {
   constructor(props){
     super(props)
+    // binds formatDate method to the class 
     this.formatDate = this.formatDate.bind(this);  
+    //Declares msgTime state vaiable that will be used to display formated time in user messages.
     this.state = {
       msgTime: "",
    }
   }
 
+  // Native method of every Component Class that runs code after all parent class components are rendered.
   componentDidMount() {
+    //runs formatDate method when class components are rendered.
     this.formatDate();
   }
 
+  /* Method that formats message time. 
+  **  */
   formatDate(){
     var date = "";
     var postDate = this.props.data.date;

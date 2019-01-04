@@ -7,7 +7,6 @@ namespace SignalRChat.Hubs
 {
     public static class UserHandler
     {
-        //public static HashSet<string> ConnectedIds = new HashSet<string>();
         public static Dictionary<string, List<string>> ConnectionGroups = new Dictionary<string, List<string>>();
 
     }
@@ -15,15 +14,11 @@ namespace SignalRChat.Hubs
     {
         public override async Task OnConnectedAsync()
         {
-            //UserHandler.ConnectedIds.Add(Context.ConnectionId);
-            //Console.WriteLine( "\n\n\n"  + UserHandler.ConnectedIds.Count + "\n\n\n");
             await base.OnConnectedAsync();
         }
 
         public override async Task OnDisconnectedAsync(Exception exception)
         {
-            //UserHandler.ConnectedIds.Remove(Context.ConnectionId);
-            //Console.WriteLine( "\n\n\n"  + UserHandler.ConnectedIds.Count + "\n\n\n");
 
             List<string> groups= new List<string>();
             groups = UserHandler.ConnectionGroups[Context.ConnectionId];
@@ -67,8 +62,6 @@ namespace SignalRChat.Hubs
             hold = hold + ",\"connectionID\":\"" + Context.ConnectionId + "\"}";
             Console.WriteLine( "\n\n\nData: "  + hold + "\n\n\n");
             await Clients.All.SendAsync("receiveMessage", hold);
-            //Console.WriteLine( "\n\n\nData: "  + message + "\n\n\n");
-            //await Clients.All.SendAsync("receiveMessage", message);
         }
     }
     

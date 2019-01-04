@@ -9,10 +9,13 @@ app.use(express.static('public'));
 
 app.get('*', (req, res) => {
     res.send(`
+    <!DOCTYPE html>
         <html>
             <head>
                 <title>LostAtlas React App</title>
                 <link href="https://fonts.googleapis.com/css?family=Lato|Oswald|Roboto+Condensed|Source+Sans+Pro|Ubuntu|Ubuntu+Condensed" rel="stylesheet">
+                <script src="/signalr.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
                 <script src="/bundle.min.js"></script>
             </head>
             <body>

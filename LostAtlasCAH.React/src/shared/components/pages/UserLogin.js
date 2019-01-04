@@ -1,9 +1,12 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 
+
+
 class UserLogin extends Component {
 
   render() {
+    
     return (
       <div id="enterPage">
         <div className="CenterBox">
